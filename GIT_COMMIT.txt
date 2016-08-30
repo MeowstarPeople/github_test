@@ -1,0 +1,35 @@
+配置：
+
+mmi4@xc-buildsrv:~$ git config --global user.name "xiaoyong.cui"
+mmi4@xc-buildsrv:~$ git config --global user.email "xiaoyong.cui@xchengtech.com"
+mmi4@xc-buildsrv:~$ ssh-keygen 
+
+提交
+mmi4@xc-buildsrv:~$ vim .ssh/config
+mmi4@xc-buildsrv:~$ vim .ssh/id_rsa.pub 
+mmi4@xc-buildsrv:~$ cd workspace/
+mmi4@xc-buildsrv:~/workspace$ ls
+mmi4@xc-buildsrv:~/workspace$ mkdir Test
+mmi4@xc-buildsrv:~/workspace$ cd Test
+mmi4@xc-buildsrv:~/workspace/Test$ git clone ssh://xiaoyong.cui@192.168.110.29:29418/test
+
+
+
+mmi4@xc-buildsrv:~/workspace/Test/test$ vim ssss.txt
+mmi4@xc-buildsrv:~/workspace/Test/test$ git add ssss.txt
+mmi4@xc-buildsrv:~/workspace/Test/test$ git commit -m "for test"
+mmi4@xc-buildsrv:~/workspace/Test/test$ git push origin HEAD:refs/for/master
+
+git diff res/layout/app_icon.xml
+
+
+git pull --rebase ? 
+git add changefile ? 
+git commit ?
+git  pull --rebase ?  
+git push origin HEAD:refs/for/master 
+git pull –rebase
+
+
+git tag 版本号
+git push origin 版本号
